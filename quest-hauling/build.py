@@ -17,7 +17,7 @@ from datetime import date
 BUSINESS = {
     "name": "Quest Hauling",
     "domain": "https://www.questhauling.com",  # TODO: replace with the real domain
-    "phone": "555-555-5555",                    # TODO: replace with the real number
+    "phone": "714-735-4664",
     "email": "questhauling1@gmail.com",
     "city": "Huntington Beach",
     "region": "CA",
@@ -97,12 +97,84 @@ CITIES = [
         "nearby": ["santa-ana", "fountain-valley", "irvine", "long-beach"],
     },
     {
-        "slug": "long-beach", "name": "Long Beach", "county": "Los Angeles County",
+        "slug": "long-beach", "name": "Long Beach", "county": "Los Angeles County", "region": "South LA & South Bay",
         "zips": ["90802", "90803", "90804", "90805", "90806", "90807", "90808", "90810", "90813", "90814", "90815"],
         "hoods": ["Belmont Shore", "Naples", "Bixby Knolls", "Los Altos", "Bluff Park", "California Heights"],
-        "intro": "Long Beach is just across the county line from our Huntington Beach yard. We deliver 16-yard dumpsters for remodels in Bixby Knolls, cleanouts in Belmont Shore and yard projects in Los Altos.",
+        "intro": "Long Beach sits between our Huntington Beach and Los Angeles yards, so delivery is quick from either one. We deliver 16-yard dumpsters for remodels in Bixby Knolls, cleanouts in Belmont Shore and yard projects in Los Altos.",
         "tip": "Belmont Shore and Naples lots are tight, and many homes rely on alleys. If the bin has to go on the street, check with the City of Long Beach about whether a permit is required for your block.",
-        "nearby": ["huntington-beach", "fountain-valley", "anaheim", "costa-mesa"],
+        "nearby": ["huntington-beach", "torrance", "fountain-valley", "anaheim"],
+    },
+    {
+        "slug": "los-angeles", "name": "Los Angeles", "county": "Los Angeles County", "region": "Central LA",
+        "zips": ["90004", "90005", "90006", "90010", "90019", "90020", "90026", "90027", "90029", "90036", "90039", "90048"],
+        "hoods": ["Koreatown", "Mid-City", "Mid-Wilshire", "Hancock Park", "Fairfax", "Silver Lake", "Echo Park", "Los Feliz"],
+        "intro": "We deliver 16-yard dumpsters across the City of Los Angeles, from Koreatown apartment turnovers to Silver Lake hillside remodels and Mid-City bungalow renovations. Our Los Angeles yard keeps delivery quick across Central, West and South LA, at the same flat price as everywhere else we serve.",
+        "tip": "Driveway placement doesn't need a permit. If the bin has to sit on a public street in the City of Los Angeles, you'll typically need a temporary permit from the city first, so plan for that before delivery day.",
+        "nearby": ["hollywood", "downtown-los-angeles", "west-los-angeles", "south-los-angeles"],
+    },
+    {
+        "slug": "hollywood", "name": "Hollywood", "county": "Los Angeles County", "region": "Central LA",
+        "zips": ["90028", "90038", "90046", "90068"],
+        "hoods": ["Central Hollywood", "Hollywood Hills", "East Hollywood", "Hollywood Dell", "Spaulding Square", "Melrose Hill"],
+        "intro": "Hollywood projects range from apartment cleanouts off Sunset to full remodels up in the Hills. Our 16-yard roll-off is compact enough for tight Hollywood lots and big enough for a kitchen or whole-home cleanout.",
+        "tip": "Streets in the Hollywood Hills are narrow and winding. Tell us about street width, tight turns and where a truck can turn around so we can confirm access before we roll.",
+        "nearby": ["los-angeles", "downtown-los-angeles", "west-los-angeles", "culver-city"],
+    },
+    {
+        "slug": "downtown-los-angeles", "name": "Downtown Los Angeles", "county": "Los Angeles County", "region": "Central LA",
+        "zips": ["90012", "90013", "90014", "90015", "90017", "90021", "90071"],
+        "hoods": ["Arts District", "Historic Core", "South Park", "Little Tokyo", "Fashion District", "Chinatown"],
+        "intro": "In Downtown LA our dumpsters go to loft renovations, tenant improvements, office cleanouts and retail turnovers. One 16-yard bin at a flat price keeps small commercial jobs simple.",
+        "tip": "Most DTLA buildings have no driveway. Check with building management about using a loading dock, lot or alley. If the bin has to go on the street, you'll need a city permit first.",
+        "nearby": ["los-angeles", "hollywood", "south-los-angeles", "culver-city"],
+    },
+    {
+        "slug": "west-los-angeles", "name": "West Los Angeles", "county": "Los Angeles County", "region": "West LA",
+        "zips": ["90024", "90025", "90034", "90035", "90049", "90064", "90066", "90094", "90291"],
+        "hoods": ["Westwood", "Brentwood", "Sawtelle", "Palms", "Mar Vista", "Venice", "Rancho Park", "Playa Vista"],
+        "intro": "Westside homeowners use our 16-yard dumpster for Mar Vista remodels, Venice cottage renovations, Brentwood estate cleanouts and Palms rental turnovers. Delivery, a full week and pickup are included.",
+        "tip": "Venice walk streets and many Westside lots are alley-loaded. If your only access is an alley, mention it when you book so we can plan placement that keeps the alley passable.",
+        "nearby": ["santa-monica", "culver-city", "los-angeles", "hollywood"],
+    },
+    {
+        "slug": "santa-monica", "name": "Santa Monica", "county": "Los Angeles County", "region": "West LA",
+        "zips": ["90401", "90402", "90403", "90404", "90405"],
+        "hoods": ["Ocean Park", "Sunset Park", "North of Montana", "Wilshire Montana", "Pico", "Mid-City"],
+        "intro": "Santa Monica remodels, rental unit turnovers and move-outs all produce more debris than a trash can can handle. Our 16-yard roll-off fits most Santa Monica driveways and carries a full kitchen or garage cleanout.",
+        "tip": "Santa Monica regulates bins placed on city streets, so a permit is usually needed if the dumpster can't go on your driveway or private property. Alley-facing garages often make the easiest placement.",
+        "nearby": ["west-los-angeles", "culver-city", "los-angeles", "torrance"],
+    },
+    {
+        "slug": "culver-city", "name": "Culver City", "county": "Los Angeles County", "region": "West LA",
+        "zips": ["90230", "90232"],
+        "hoods": ["Downtown Culver City", "Carlson Park", "Culver West", "Sunkist Park", "Blair Hills", "Fox Hills"],
+        "intro": "Culver City bungalows and condos get a lot of remodeling work, and a 16-yard dumpster is usually the right size for it. We deliver to every Culver City neighborhood for the same flat price.",
+        "tip": "Lots here can be compact. Make sure the truck has room to back in and that low tree branches and wires won't block the drop. Send a photo if you're unsure.",
+        "nearby": ["west-los-angeles", "santa-monica", "inglewood", "los-angeles"],
+    },
+    {
+        "slug": "south-los-angeles", "name": "South Los Angeles", "county": "Los Angeles County", "region": "South LA & South Bay",
+        "zips": ["90007", "90008", "90016", "90018", "90037", "90043", "90044", "90047", "90062"],
+        "hoods": ["West Adams", "Jefferson Park", "Crenshaw", "Baldwin Hills", "Leimert Park", "Hyde Park", "University Park", "Vermont Square"],
+        "intro": "South LA is full of craftsman and bungalow renovations, garage-to-ADU conversions and family estate cleanouts. Our 16-yard roll-off handles all three at one flat price, from West Adams to Hyde Park.",
+        "tip": "Garage-to-ADU conversions often mean stucco, concrete slab and tile, which are heavy. Ask how much of that will fit within the included 1.5 tons before you start loading.",
+        "nearby": ["inglewood", "los-angeles", "downtown-los-angeles", "culver-city"],
+    },
+    {
+        "slug": "inglewood", "name": "Inglewood", "county": "Los Angeles County", "region": "South LA & South Bay",
+        "zips": ["90301", "90302", "90303", "90304", "90305"],
+        "hoods": ["Morningside Park", "Fairview Heights", "Century Heights", "North Inglewood", "Lockhaven"],
+        "intro": "Inglewood homeowners are renovating, adding ADUs and clearing out garages. We deliver 16-yard dumpsters across all five Inglewood ZIP codes with delivery and pickup included.",
+        "tip": "Event days at SoFi Stadium and the Kia Forum jam local streets. If your project lines up with a big game or concert, pick a different delivery day so we're not stuck in traffic.",
+        "nearby": ["south-los-angeles", "culver-city", "torrance", "west-los-angeles"],
+    },
+    {
+        "slug": "torrance", "name": "Torrance", "county": "Los Angeles County", "region": "South LA & South Bay",
+        "zips": ["90501", "90502", "90503", "90504", "90505"],
+        "hoods": ["Old Torrance", "West Torrance", "North Torrance", "Walteria", "Seaside", "Hollywood Riviera"],
+        "intro": "Torrance and the South Bay are a short drive from our Los Angeles yard. We drop 16-yard dumpsters for garage cleanouts, ranch-house remodels and yard overhauls all over Torrance.",
+        "tip": "Most Torrance homes have wide driveways that fit the bin easily. Put a couple of boards under the rails if you want extra protection for your concrete.",
+        "nearby": ["long-beach", "inglewood", "south-los-angeles", "santa-monica"],
     },
 ]
 CITY = {c["slug"]: c for c in CITIES}
@@ -116,9 +188,9 @@ COUNTIES = [
     },
     {
         "slug": "los-angeles-county", "name": "Los Angeles County",
-        "intro": "We deliver our 16-yard roll-off dumpsters into Los Angeles County from our Huntington Beach yard, starting with Long Beach and the South Bay and Gateway cities. Call with your address and we'll confirm delivery.",
-        "extra": ["Bellflower", "Carson", "Cerritos", "Downey", "Hawaiian Gardens", "Lakewood", "Norwalk", "Signal Hill", "Torrance", "Whittier"],
-        "cities": ["long-beach"],
+        "intro": "From our Los Angeles yard we deliver 16-yard roll-off dumpsters across West LA, Central LA, South LA, the South Bay and Long Beach. One size, one flat price: $550 for 7 days with 1.5 tons of disposal, delivery and pickup included.",
+        "extra": ["Beverly Hills", "West Hollywood", "Marina del Rey", "El Segundo", "Hawthorne", "Gardena", "Carson", "Manhattan Beach", "Redondo Beach", "Lakewood", "Signal Hill", "Bellflower", "Cerritos", "Downey"],
+        "cities": ["los-angeles", "hollywood", "downtown-los-angeles", "west-los-angeles", "santa-monica", "culver-city", "south-los-angeles", "inglewood", "torrance", "long-beach"],
     },
 ]
 
@@ -126,12 +198,12 @@ COUNTIES = [
 # Shared copy
 # ---------------------------------------------------------------------------
 PROJECTS = [
-    ("home", "Home cleanouts", "Clear out years of furniture, boxes and clutter in one weekend."),
-    ("garage", "Garage cleanouts", "Get your parking spot back. Old shelving, bikes, boxes and junk."),
-    ("remodel", "Remodeling projects", "Kitchen and bath tear-outs, cabinets, drywall and flooring."),
-    ("construction", "Construction debris", "Job-site waste from small builds, ADUs and renovations."),
-    ("yard", "Yard cleanups", "Branches, brush, old fencing and landscaping debris."),
-    ("moving", "Moving cleanouts", "Move-outs, rental turnovers and estate cleanouts."),
+    ("home-cleanout", "Home cleanouts", "Clear out years of furniture, boxes and clutter in one weekend."),
+    ("garage-cleanout", "Garage cleanouts", "Get your parking spot back. Old shelving, bikes, boxes and junk."),
+    ("remodeling-debris", "Remodeling projects", "Kitchen and bath tear-outs, cabinets, drywall and flooring."),
+    ("construction-debris", "Construction debris", "Job-site waste from small builds, ADUs and renovations."),
+    ("yard-cleanup", "Yard cleanups", "Branches, brush, old fencing and landscaping debris."),
+    ("moving-cleanout", "Moving cleanouts", "Move-outs, rental turnovers and estate cleanouts."),
 ]
 
 ALLOWED = ["Furniture and household junk", "Cabinets, countertops and fixtures", "Drywall, wood and flooring",
@@ -154,7 +226,7 @@ FAQS = [
     ("Do I need a permit?",
      "Not if the dumpster sits on your own driveway or private property. If it has to go on a public street, your city may require a permit. Check with your city, and we're happy to help you figure it out."),
     ("Where do you deliver?",
-     "We're based in Huntington Beach and deliver throughout Orange County and Los Angeles County, including Newport Beach, Costa Mesa, Fountain Valley, Irvine, Santa Ana, Anaheim and Long Beach."),
+     "We have yards in Huntington Beach and Los Angeles and deliver throughout Orange County and across Los Angeles County, including West LA, Central LA, South LA, the South Bay and Long Beach. Call with your address to confirm delivery."),
     ("How do I book?",
      f"Call {B['phone']} or fill out the quote form on this page with your address and preferred delivery date. We'll confirm your drop-off time."),
 ]
@@ -284,8 +356,8 @@ p{margin:0}
 .trust li{display:flex;align-items:center;gap:8px}
 .trust .ico{color:var(--lime);width:1.2em;height:1.2em}
 .hero-visual{position:relative;min-width:0}
-.hero-art{display:block;width:100%;height:auto;filter:drop-shadow(0 18px 24px rgba(0,0,0,.35))}
-.badge{position:absolute;top:-6px;right:4%;background:var(--lime);color:var(--navy);font:900 1.1rem/1 var(--display);text-transform:uppercase;text-align:center;width:116px;height:116px;border-radius:50%;display:grid;place-content:center;gap:2px;transform:rotate(10deg);box-shadow:0 6px 0 var(--lime-d)}
+.hero-photo{display:block;width:100%;height:auto;border-radius:0 18px 18px 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,transparent 22%,#000 46%);mask-image:linear-gradient(90deg,transparent 0,transparent 22%,#000 46%)}
+.badge{position:absolute;top:-18px;right:-6px;background:var(--lime);color:var(--navy);font:900 1.1rem/1 var(--display);text-transform:uppercase;text-align:center;width:116px;height:116px;border-radius:50%;display:grid;place-content:center;gap:2px;transform:rotate(10deg);box-shadow:0 6px 0 var(--lime-d)}
 .badge b{font-size:2.4rem;display:block}
 
 /* Included strip */
@@ -307,6 +379,7 @@ p{margin:0}
 .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .proj{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:start;padding:22px;border:2px solid var(--line);border-radius:var(--r)}
 .proj .circle{grid-row:span 2;width:56px;height:56px;border-radius:14px;background:var(--blue);color:var(--lime);display:grid;place-items:center;font-size:1.7rem}
+.proj img{grid-row:span 2;width:120px;height:88px;object-fit:cover;border-radius:10px;background:var(--mist)}
 .proj h3{color:var(--navy);font-size:1.3rem}
 .proj p{color:var(--muted);font-size:1rem}
 
@@ -344,6 +417,8 @@ p{margin:0}
 .area-col h3{color:var(--lime);text-transform:uppercase;margin-bottom:14px}
 .area-col h3 a{color:inherit;text-decoration:none}
 .area-col h3 a:hover{text-decoration:underline}
+.area-col h4{font:700 .8rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:#d6e2fb;margin:16px 0 8px}
+.area-col h3+h4{margin-top:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
 .chips a,.chips span{display:inline-block;padding:7px 13px;border-radius:99px;font-weight:600;font-size:.95rem;text-decoration:none}
 .chips a{background:var(--lime);color:var(--navy)}
@@ -407,7 +482,8 @@ p{margin:0}
 
 @media (max-width:960px){
   .hero .wrap,.size,.local,.quote{grid-template-columns:1fr}
-  .hero-visual{max-width:520px}
+  .hero-visual{max-width:600px}
+  .hero-photo{border-radius:14px;-webkit-mask-image:none;mask-image:none;clip-path:inset(0 0 0 27% round 14px);margin-left:-37%;width:137%;max-width:none}
   .included{grid-template-columns:1fr 1fr}
   .inc:nth-child(2){border-right:0}
   .inc:nth-child(-n+2){border-bottom:2px solid var(--line)}
@@ -534,11 +610,11 @@ def hero(h1_main, h1_hl, sub, trail=None):
         <a class="btn btn-ghost" href="{PHONE_HREF}">{icon('phone')}Call {B['phone']}</a>
       </div>
       <ul class="trust">
-        <li>{icon('check')}One flat price</li><li>{icon('check')}No hidden fees</li><li>{icon('check')}Locally owned in {B['city']}</li>
+        <li>{icon('check')}One flat price</li><li>{icon('check')}No hidden fees</li><li>{icon('check')}Local yards in OC &amp; LA</li>
       </ul>
     </div>
     <div class="hero-visual">
-      {DUMPSTER_SVG}
+      <img class="hero-photo" src="/img/dumpster-rental-orange-county.webp" width="594" height="421" fetchpriority="high" decoding="async" alt="Quest Hauling 16-yard lime green roll-off dumpster parked by the Huntington Beach pier">
       <div class="badge" aria-hidden="true"><b>{B['size']}</b>Yard</div>
     </div>
   </div>
@@ -576,7 +652,9 @@ def steps(place="your driveway"):
 
 def projects(city=None):
     where = f" in {city}" if city else ""
-    cards = "".join(f'<div class="proj"><div class="circle">{icon(i)}</div><h3>{t}</h3><p>{d}</p></div>' for i, t, d in PROJECTS)
+    cards = "".join(
+        f'<div class="proj"><img src="/img/{i}.webp" width="140" height="102" loading="lazy" decoding="async" '
+        f'alt="{t} with a Quest Hauling dumpster"><h3>{t}</h3><p>{d}</p></div>' for i, t, d in PROJECTS)
     return f"""<section class="sec" aria-labelledby="proj-h">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">Perfect for</span><h2 id="proj-h">Projects our dumpster handles{where}</h2></div>
@@ -623,14 +701,22 @@ def what_fits():
 def service_area():
     cols = []
     for co in COUNTIES:
-        links = "".join(f'<li><a href="/dumpster-rental/{s}/">{CITY[s]["name"]}</a></li>' for s in co["cities"])
+        groups = {}
+        for s in co["cities"]:
+            groups.setdefault(CITY[s].get("region"), []).append(s)
+        inner = ""
+        for region, slugs in groups.items():
+            links = "".join(f'<li><a href="/dumpster-rental/{s}/">{CITY[s]["name"]}</a></li>' for s in slugs)
+            label = f'<h4>{esc(region)}</h4>' if region else ""
+            inner += f'{label}<ul class="chips">{links}</ul>'
         extra = "".join(f"<li><span>{esc(n)}</span></li>" for n in co["extra"])
-        cols.append(f'<div class="area-col"><h3><a href="/dumpster-rental/{co["slug"]}/">{co["name"]}</a></h3><ul class="chips">{links}{extra}</ul></div>')
+        inner += f'<h4>Also serving</h4><ul class="chips">{extra}</ul>'
+        cols.append(f'<div class="area-col"><h3><a href="/dumpster-rental/{co["slug"]}/">{co["name"]}</a></h3>{inner}</div>')
     return f"""<section class="sec area" id="service-area" aria-labelledby="area-h">
   <div class="wrap">
     <div class="sec-head"><span class="eyebrow">{icon('pin')} Service area</span>
     <h2 id="area-h">Serving Orange County <span class="hl">&amp; Los Angeles County</span></h2>
-    <p>Based in {B['city']} with delivery across both counties. Don't see your city? Call us and we'll confirm delivery to your address.</p></div>
+    <p>With yards in Huntington Beach and Los Angeles, we deliver across both counties. Don't see your city? Call us and we'll confirm delivery to your address.</p></div>
     <div class="area-grid">{''.join(cols)}</div>
   </div>
 </section>"""
@@ -759,10 +845,10 @@ def page(path, title, desc, body, schema_nodes):
 def home():
     title = f"Dumpster Rental Orange County & LA County | ${B['price']} 16-Yard | {B['name']}"
     desc = (f"16-yard dumpster rental in Orange County & Los Angeles County for a flat ${B['price']}: "
-            f"{B['days']} days, {B['tons']} tons, delivery and pickup included. Based in Huntington Beach. Call {B['phone']}.")
+            f"{B['days']} days, {B['tons']} tons, delivery and pickup included. Yards in Huntington Beach and LA. Call {B['phone']}.")
     body = "\n".join([
         hero(f"{B['size']}-Yard Dumpster Rental", "in Orange County &amp; Los Angeles County",
-             f"One size. One price. No hassle. Roll-off dumpsters delivered from {B['city']} for cleanouts, remodels and job sites."),
+             f"One size. One price. No hassle. Roll-off dumpsters delivered from our Huntington Beach and Los Angeles yards for cleanouts, remodels and job sites."),
         included(), steps(), projects(), what_fits(), service_area(), faq(FAQS), quote(),
     ])
     return page("/", title, desc, body, [faq_schema(FAQS)])
@@ -775,7 +861,7 @@ def city_page(c):
     trail = [("Home", "/"), (c["county"], f"/dumpster-rental/{county_slug}/"), (f"Dumpster Rental {n}", path)]
     title = f"Dumpster Rental {n}, CA | ${B['price']} 16-Yard Roll-Off | {B['name']}"
     desc = (f"Rent a 16-yard dumpster in {n} for ${B['price']} flat: {B['days']} days, {B['tons']} tons, "
-            f"delivery and pickup included. Fast local service from {B['city']}. Call {B['phone']}.")
+            f"delivery and pickup included. Fast local service from our {yard_for(c['county'])} yard. Call {B['phone']}.")
     faqs = [
         (f"How much is a dumpster rental in {n}?",
          f"A 16-yard roll-off dumpster in {n} is ${B['price']} flat, including delivery, {B['days']} days on site, pickup and up to {B['tons']} tons of disposal."),
@@ -833,12 +919,16 @@ def county_page(co):
   </div>
 </section>"""
     faqs = [(f"Do you deliver dumpsters everywhere in {n}?",
-             f"We deliver throughout {n} from our {B['city']} yard. Call with your address and we'll confirm your delivery window.")] + FAQS[:4]
+             f"We deliver throughout {n} from our {yard_for(n)} yard. Call with your address and we'll confirm your delivery window.")] + FAQS[:4]
     body = "\n".join([
         hero("Dumpster Rental", f"in {esc(n)}", f"{B['size']}-yard roll-off dumpsters for {esc(n)} cleanouts, remodels and construction projects. ${B['price']} flat.", trail),
         cities_sec, included(), steps(), what_fits(), faq(faqs, f"{esc(n)} dumpster rental FAQ"), quote(n),
     ])
     return page(path, title, desc, body, [faq_schema(faqs), crumbs_schema(trail)])
+
+
+def yard_for(county):
+    return "Huntington Beach" if county == "Orange County" else "Los Angeles"
 
 
 def write(rel, content):

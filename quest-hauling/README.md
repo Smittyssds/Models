@@ -15,14 +15,14 @@ This writes the finished site to `public/`. Upload `public/` to any static host 
 Edit the `BUSINESS` block at the top of `build.py`, then rebuild:
 
 - `domain`: the real domain. It's used for canonical URLs, the sitemap and structured data.
-- `phone`: the real phone number. It's currently the placeholder `555-555-5555`.
 - `form_action`: quote requests go to questhauling1@gmail.com through FormSubmit. The first submission sends a one-time activation email to that inbox, which you must confirm.
 
 ## Pages
 
 - `/`: home page
 - `/dumpster-rental/orange-county/`, `/dumpster-rental/los-angeles-county/`: county pages
-- `/dumpster-rental/<city>/`: Huntington Beach, Newport Beach, Costa Mesa, Fountain Valley, Irvine, Santa Ana, Anaheim, Long Beach
+- `/dumpster-rental/<city>/`: Orange County (Huntington Beach, Newport Beach, Costa Mesa, Fountain Valley, Irvine, Santa Ana, Anaheim) and LA (Los Angeles, Hollywood, Downtown LA, West LA, Santa Monica, Culver City, South LA, Inglewood, Torrance, Long Beach)
+- Photos live in `static/img/` and are copied into `public/` on build. Replace them with full-resolution or real job photos using the same filenames.
 
 To add a city, add an entry to `CITIES` in `build.py` with its own intro, local tip, neighborhoods and ZIP codes. Keep each city's text unique so the pages aren't treated as duplicates.
 
