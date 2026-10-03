@@ -16,7 +16,7 @@ from datetime import date
 # ---------------------------------------------------------------------------
 BUSINESS = {
     "name": "Quest Hauling",
-    "domain": "https://www.questhauling.com",  # TODO: replace with the real domain
+    "domain": "https://questhauling.ai",
     "phone": "714-735-4664",
     "email": "questhauling1@gmail.com",
     "city": "Huntington Beach",

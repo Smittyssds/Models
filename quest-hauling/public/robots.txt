@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.questhauling.com/sitemap.xml
+Sitemap: https://questhauling.ai/sitemap.xml

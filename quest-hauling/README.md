@@ -14,7 +14,7 @@ This writes the finished site to `public/`. Upload `public/` to any static host 
 
 Edit the `BUSINESS` block at the top of `build.py`, then rebuild:
 
-- `domain`: the real domain. It's used for canonical URLs, the sitemap and structured data.
+- `domain`: https://questhauling.ai. It's used for canonical URLs, the sitemap and structured data.
 - `form_action`: quote requests go to questhauling1@gmail.com through FormSubmit. The first submission sends a one-time activation email to that inbox, which you must confirm.
 
 ## Pages

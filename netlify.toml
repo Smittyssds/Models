@@ -1,0 +1,10 @@
+# Netlify deploy settings for the Quest Hauling site (questhauling.ai)
+[build]
+  base = "quest-hauling"
+  command = "python3 build.py"
+  publish = "public"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
